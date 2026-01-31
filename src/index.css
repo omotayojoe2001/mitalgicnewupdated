@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 20%;
+
+    --primary: 215 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 20% 95%;
+    --secondary-foreground: 220 15% 20%;
+
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 215 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 215 100% 50%;
+
+    --radius: 0.5rem;
+    
+    --navy: 220 40% 15%;
+    --navy-foreground: 0 0% 100%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 40% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 40% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 40% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 215 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 30% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 30% 20%;
+    --muted-foreground: 220 15% 65%;
+
+    --accent: 215 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 30% 20%;
+    --input: 220 30% 20%;
+    --ring: 215 100% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-6 md:px-12 lg:px-16;
+  }
+}
+
+@layer base {
+  .blog-content {
+    @apply text-foreground leading-relaxed;
+  }
+  .blog-content h1 {
+    @apply text-3xl font-bold text-foreground mb-6 mt-8;
+  }
+  .blog-content h2 {
+    @apply text-2xl font-bold text-foreground mb-4 mt-8;
+  }
+  .blog-content h3 {
+    @apply text-xl font-semibold text-foreground mb-3 mt-6;
+  }
+  .blog-content h4 {
+    @apply text-lg font-semibold text-foreground mb-2 mt-4;
+  }
+  .blog-content p {
+    @apply text-muted-foreground leading-relaxed mb-4;
+  }
+  .blog-content strong, .blog-content b {
+    @apply text-foreground font-semibold;
+  }
+  .blog-content a {
+    @apply text-primary hover:text-primary/80 underline;
+  }
+  .blog-content ul {
+    @apply text-muted-foreground mb-4 pl-6;
+  }
+  .blog-content ol {
+    @apply text-muted-foreground mb-4 pl-6;
+  }
+  .blog-content li {
+    @apply mb-2 list-disc;
+  }
+  .blog-content ol li {
+    @apply list-decimal;
+  }
+  .blog-content blockquote {
+    @apply border-l-4 border-primary pl-4 italic text-muted-foreground my-6;
+  }
+  .blog-content img {
+    @apply rounded-lg my-6 w-full;
+  }
+  .blog-content pre {
+    @apply bg-muted p-4 rounded-lg overflow-x-auto my-4;
+  }
+  .blog-content code {
+    @apply bg-muted px-2 py-1 rounded text-sm;
+  }
+}
