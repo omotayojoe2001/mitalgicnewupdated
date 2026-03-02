@@ -277,7 +277,7 @@ const About = () => {
                 <CardContent className="p-8">
                   <div className="h-20 w-20 rounded-full overflow-hidden mx-auto mb-4">
                     <img 
-                      src={member.name === "Mr Aydın DÜĞENCIOĞLU" ? "/aydin.jpg" : "/Gabriel-Ajayi.jpg"} 
+                      src={member.name === "Mr Aydın DÜĞENCIOĞLU" ? "/aydin.jpg" : "/Gabriel-Ajayi.jpeg"} 
                       alt={member.name} 
                       className="w-full h-full object-cover"
                     />
