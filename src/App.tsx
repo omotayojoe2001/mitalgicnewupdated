@@ -16,6 +16,10 @@ import MaintenanceServices from "./pages/MaintenanceServices";
 import ApprovedSuppliers from "./pages/ApprovedSuppliers";
 import BusinessExpansion from "./pages/BusinessExpansion";
 import PowerPlantProject from "./pages/PowerPlantProject";
+import CentralExchange from "./pages/CentralExchange";
+import CentralExchangePrivacy from "./pages/CentralExchangePrivacy";
+import CentralExchangeTerms from "./pages/CentralExchangeTerms";
+import CentralExchangeDeleteAccount from "./pages/CentralExchangeDeleteAccount";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +44,10 @@ const App = () => (
           <Route path="/insights" element={<Insights />} />
           <Route path="/insights/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/central-exchange" element={<CentralExchange />} />
+          <Route path="/central-exchange/privacy" element={<CentralExchangePrivacy />} />
+          <Route path="/central-exchange/terms" element={<CentralExchangeTerms />} />
+          <Route path="/central-exchange/delete-account" element={<CentralExchangeDeleteAccount />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
