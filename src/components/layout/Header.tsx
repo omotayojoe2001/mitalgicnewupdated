@@ -52,7 +52,7 @@ const Header = () => {
               <Link to="/contact">Get a Proposal</Link>
             </Button>
             <Button variant="outline" size="default" asChild>
-              <a href={`https://wa.me/${contactInfo?.whatsapp_number?.replace(/[^0-9]/g, '') || '905326517156'}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a href={`https://wa.me/${contactInfo?.whatsapp_number?.replace(/[^0-9]/g, '') || '2348165721243'}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <MessageCircle className="h-4 w-4" />
                 WhatsApp
               </a>
@@ -87,7 +87,7 @@ const Header = () => {
                     <Link to="/contact">Get a Proposal</Link>
                   </Button>
                   <Button variant="outline" asChild>
-                    <a href={`https://wa.me/${contactInfo?.whatsapp_number?.replace(/[^0-9]/g, '') || '905326517156'}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <a href={`https://wa.me/${contactInfo?.whatsapp_number?.replace(/[^0-9]/g, '') || '2348165721243'}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                       <MessageCircle className="h-4 w-4" />
                       WhatsApp
                     </a>

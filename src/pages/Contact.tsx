@@ -157,7 +157,7 @@ const Contact = () => {
                     <h4 className="font-medium mb-2">WhatsApp</h4>
                     <div className="space-y-2">
                       <Button variant="default" className="w-full gap-2 bg-success hover:bg-success/90" asChild>
-                        <a href={`https://wa.me/${contactInfo?.whatsapp_number?.replace(/[^0-9]/g, '') || '905326517156'}`} target="_blank" rel="noopener noreferrer">
+                        <a href={`https://wa.me/${contactInfo?.whatsapp_number?.replace(/[^0-9]/g, '') || '2348165721243'}`} target="_blank" rel="noopener noreferrer">
                           <MessageCircle className="h-4 w-4" />
                           WhatsApp TR
                         </a>

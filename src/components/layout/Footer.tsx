@@ -22,10 +22,6 @@ const Footer = () => {
                 {contactInfo?.email_address || 'info@mitalgic.com'}
               </a>
               <div className="space-y-2">
-                <a href="tel:+905326517156" className="flex items-center gap-2 text-sm hover:text-primary transition-colors">
-                  <Phone className="h-4 w-4" />
-                  TR: +90 532 651 71 56
-                </a>
                 <a href="tel:+2348165721243" className="flex items-center gap-2 text-sm hover:text-primary transition-colors">
                   <Phone className="h-4 w-4" />
                   NG: +234 816 572 1243
@@ -42,10 +38,6 @@ const Footer = () => {
                 </div>
               </div>
               <div className="space-y-2">
-                <a href={`https://wa.me/${contactInfo?.whatsapp_number?.replace(/[^0-9]/g, '') || '905326517156'}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-success hover:text-success/80 transition-colors">
-                  <MessageCircle className="h-4 w-4" />
-                  WhatsApp TR: +90 532 651 71 56
-                </a>
                 <a href="https://wa.me/2348165721243" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-success hover:text-success/80 transition-colors">
                   <MessageCircle className="h-4 w-4" />
                   WhatsApp NG: +234 816 572 1243
