@@ -267,36 +267,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Board Members */}
-      <section className="py-20">
-        <div className="container">
-          <h2 className="text-3xl font-bold text-center mb-12">Member of Board</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {boardMembers.map((member) => (
-              <Card key={member.name} className="text-center">
-                <CardContent className="p-8">
-                  <div className="h-20 w-20 rounded-full overflow-hidden mx-auto mb-4">
-                    <img 
-                      src={member.name === "Mr Aydın DÜĞENCIOĞLU" ? "/aydin.jpg" : "/Gabriel-Ajayi.jpeg"} 
-                      alt={member.name} 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{member.title}</p>
-                  <p className="text-sm mb-4">{member.description}</p>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                      <Linkedin className="h-4 w-4 mr-2" />
-                      LinkedIn
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
