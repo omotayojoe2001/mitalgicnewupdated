@@ -175,7 +175,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-navy-foreground/10 mt-8 pt-8 text-center text-sm text-navy-foreground/60">
-          <p>© 2025 Mitalgic Global Limited. All rights reserved.</p>
+          <p>© 2026 Mitalgic Global Limited. All rights reserved.</p>
         </div>
       </div>
     </footer>
