@@ -23,7 +23,11 @@ import {
   ArrowRight,
   Award,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  Shield,
+  Smartphone,
+  Repeat,
+  Banknote
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useBlogPosts } from "@/hooks/useSupabase";
@@ -351,6 +355,53 @@ const Index = () => {
               >
                 <ChevronRight className="h-4 w-4" />
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Products */}
+      <section className="py-20">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Products</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Innovative solutions built by Mitalgic Global
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="rounded-2xl bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 p-10 md:p-14 text-white">
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                  <Badge className="bg-amber-500 text-black mb-4">Live Now</Badge>
+                  <h3 className="text-3xl font-bold mb-3">Central Exchange</h3>
+                  <p className="text-sm text-slate-400 mb-2">Visit our Affiliates</p>
+                  <p className="text-blue-200 mb-6">
+                    A secure peer-to-peer cryptocurrency trading platform. Buy and sell BTC & USDT with verified merchants, pay via Alipay merchants, and get cash delivered to you physically.
+                  </p>
+                  <Button className="bg-amber-500 hover:bg-amber-600 text-black" asChild>
+                    <a href="https://www.centralexchange.com.ng/" target="_blank" rel="noopener noreferrer">
+                      Visit Central Exchange
+                    </a>
+                  </Button>
+                </div>
+                <div className="space-y-4">
+                  {[
+                    { icon: Repeat, text: "P2P Buy & Sell — BTC & USDT" },
+                    { icon: Banknote, text: "Alipay Merchant Payments" },
+                    { icon: Smartphone, text: "Cash Delivery & Pickup in Nigeria" },
+                    { icon: Shield, text: "Secure Escrow Protection" },
+                  ].map((feature) => (
+                    <div key={feature.text} className="flex items-center gap-3">
+                      <div className="h-10 w-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+                        <feature.icon className="h-5 w-5 text-amber-400" />
+                      </div>
+                      <span className="text-sm text-slate-200">{feature.text}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
