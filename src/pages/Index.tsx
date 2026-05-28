@@ -241,7 +241,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-6">
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-9 gap-6">
             {industries.map((industry) => (
               <div key={industry.name} className="flex flex-col items-center text-center group cursor-pointer">
                 <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
